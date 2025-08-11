@@ -19,10 +19,11 @@ const App = () => {
       console.log("Canvas is available")
       is_start.current = true
 
-      const ep2: EP2 = new EP2(canvas)
-      ep2.init()
-      ep2.create()
-      ep2.start()
+      const ep: EP2 = new EP2(canvas)
+
+      ep.init()
+      ep.create()
+      ep.start()
     }
   }, [])
 
