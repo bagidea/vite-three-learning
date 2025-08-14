@@ -6,7 +6,8 @@ import {
 
 import "./App.css"
 
-import EP2 from "./learnings/ep_2"
+//import EP2 from "./learnings/ep_2"
+import EP3 from "./learnings/ep_3"
 
 const App = () => {
   const canvasRef: RefObject<HTMLCanvasElement | null> = useRef<HTMLCanvasElement>(null)
@@ -19,7 +20,8 @@ const App = () => {
       console.log("Canvas is available")
       is_start.current = true
 
-      const ep: EP2 = new EP2(canvas)
+      //const ep: EP2 = new EP2(canvas)
+      const ep: EP3 = new EP3(canvas)
 
       ep.init()
       ep.create()
